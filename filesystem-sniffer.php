@@ -13,7 +13,7 @@ if (empty($path)) {
 }
 
 /**
- * Get file names recursively recursively from path.
+ * Get file names recursively from path.
  */
 function _get_files($absolute_path) {
   // We sort to put the latest added files in the end.
