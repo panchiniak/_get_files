@@ -21,7 +21,7 @@ $files_names_previous = _get_files($path);
 $files_number_previous = count($files_names_previous);
 
 while (1){
-  // Keep watching for changed once a second at lest.
+  // Keep watching for changes once a second at lest.
   sleep (1);
 
   $files_names_current = _get_files($path);
