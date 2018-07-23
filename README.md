@@ -1,4 +1,5 @@
-# _get_files
-Watch the file system for added or removed file(s).
-
-Synopsis: php -f _get.php \<path\>
+# Filesystem sniffer
+## Description
+This program uses [find](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Finding-Files) to sniffer the file system for added or removed file(s).
+## Usage
+`php -f filesystem-sniffer.php <path including trailing slash>`
