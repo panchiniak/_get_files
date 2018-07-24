@@ -58,9 +58,13 @@ while (1) {
     if ($files_number_current < $files_number_previous) {
       $removed_number = $files_number_previous - $files_number_current;
       print "Removed $removed_number file(s)\n";
-      // @TODO: print out the names of the removed files and only.
+      $file_names_diff = array_diff($files_names_previous, $files_names_current);
+      foreach ($file_names_diff as $removed_file) {
+        print "$removed_file\n";
+      }
     }
 
     $files_number_previous = $files_number_current;
+    $files_names_previous = $files_names_current;
   }
 }
